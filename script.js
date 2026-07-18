@@ -1,3 +1,41 @@
+// ===== Password Screen =====
+
+let attempts = 0;
+
+const messages = [
+    "( •̀⤙•́ )\n\nHmm...\nThat doesn't look right.\nMaybe it's a special number between us. ❤️",
+    "(╥﹏╥)\n\nStill wrong...\nThink a little harder.",
+    "(╯°□°）╯︵ ┻━┻\n\nSeriously!?\nAre you REALLY Andreiii?",
+    "😤\n\nI'm about to tell Christian...",
+    "😂\n\nOkay...\nOne last chance!"
+];
+
+document.getElementById("unlockBtn").onclick = function () {
+
+    const pass = document.getElementById("password").value;
+    const message = document.getElementById("message");
+
+    if(pass === "2125"){
+
+        message.innerHTML = "🔓 Welcome, Andreiii ❤️";
+
+        setTimeout(function(){
+
+            document.getElementById("lockScreen").style.display = "none";
+
+        },1500);
+
+    }else{
+
+        message.innerHTML = messages[Math.min(attempts,4)];
+
+        attempts++;
+
+        document.getElementById("password").value = "";
+
+    }
+
+};
 // ===== Eight Months With You =====
 
 // Loading Screen
