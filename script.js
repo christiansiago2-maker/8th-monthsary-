@@ -2,10 +2,7 @@
 
 // Loading Screen
 window.onload = () => {
-    setTimeout(() => {
-        document.getElementById("loading").classList.add("hidden");
-        document.getElementById("giftPage").classList.remove("hidden");
-    }, 2500);
+    document.getElementById("lockScreen").style.display = "flex";
 };
 
 // Helper
