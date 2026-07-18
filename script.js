@@ -37,7 +37,29 @@ document.getElementById("envelope").onclick=()=>{
 
 const letter = `
 
-PASTE YOUR LETTER HERE ❤️
+Dear Andreiii,
+
+Happy 8th Monthsary, my love. ❤️
+
+It's hard to believe that it's already been eight months. Time has gone by so fast, yet every moment we've shared has become a memory I'll always treasure.
+
+Thank you for staying with me through my good days and my difficult ones. Thank you for your patience, your understanding, your laughter, and for making even the simplest moments feel special. Being with you has brought so much happiness into my life.
+
+I know we're not perfect. We've had misunderstandings, disagreements, and moments when things weren't easy. But through it all, I'm grateful that we're still here, still choosing each other, and still growing together. That means more to me than you could ever imagine.
+
+I made this little website because I wanted to give you something that you could always come back to whenever you miss us, or whenever you need a reminder of how much you mean to me. It may not be the biggest gift, but every part of it was made with love.
+
+Thank you for every smile you've given me, every memory we've created, and every day you've chosen to spend with me.
+
+Here's to our eighth monthsary, and to many more months, adventures, and memories together.
+
+I love you today, tomorrow, and every day after.
+
+Happy 8th Monthsary, Andreiii.
+
+Forever grateful,
+
+Christian ❤️
 
 `;
 
