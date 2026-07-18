@@ -1,0 +1,366 @@
+/* -----------------------
+   Eight Months With You
+   By Christian ❤️
+----------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#222;
+    overflow:hidden;
+}
+
+/* Pages */
+
+section{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    transition:.8s;
+}
+
+.hidden{
+    display:none;
+}
+
+/* Loading */
+
+#loading{
+    background:white;
+}
+
+.loader{
+    width:70px;
+    height:70px;
+
+    border:6px solid #ddd;
+    border-top:6px solid #8aa58c;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin-bottom:20px;
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Gift */
+
+.gift{
+
+    font-size:90px;
+
+    cursor:pointer;
+
+    animation:float 2s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Titles */
+
+h1{
+
+font-size:38px;
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+h2{
+
+margin:20px 0;
+
+}
+
+h3{
+
+font-weight:400;
+
+letter-spacing:3px;
+
+color:#777;
+
+}
+
+p{
+
+line-height:1.8;
+
+max-width:700px;
+
+color:#555;
+
+}
+
+/* Buttons */
+
+button{
+
+margin-top:30px;
+
+padding:14px 32px;
+
+border:none;
+
+border-radius:40px;
+
+background:#8aa58c;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+background:#708772;
+
+}
+
+/* Envelope */
+
+#envelope{
+
+font-size:90px;
+
+cursor:pointer;
+
+animation:float 3s infinite;
+
+}
+
+/* Letter */
+
+.paper{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+max-width:700px;
+
+}
+
+/* Gallery */
+
+#photo{
+
+width:280px;
+
+height:420px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+margin:25px 0;
+
+}
+
+.galleryButtons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+/* Counter */
+
+#counter{
+
+font-size:26px;
+
+font-weight:600;
+
+line-height:2;
+
+margin-top:30px;
+
+}
+
+/* Reasons */
+
+#reasonCard{
+
+width:320px;
+
+min-height:180px;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:22px;
+
+margin-top:20px;
+
+}
+
+/* Love Buttons */
+
+.choice{
+
+position:relative;
+
+width:100%;
+
+height:200px;
+
+margin-top:40px;
+
+}
+
+#yes{
+
+position:absolute;
+
+left:30%;
+
+}
+
+#no{
+
+position:absolute;
+
+right:30%;
+
+}
+
+/* Ending */
+
+#endingPage h1{
+
+font-size:48px;
+
+margin-bottom:25px;
+
+}
+
+#endingPage p{
+
+font-size:18px;
+
+}
+
+/* Canvas */
+
+#confetti{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+
+font-size:30px;
+
+}
+
+#photo{
+
+width:90%;
+
+height:auto;
+
+}
+
+button{
+
+width:90%;
+
+}
+
+#reasonCard{
+
+width:90%;
+
+}
+
+}
