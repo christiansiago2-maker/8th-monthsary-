@@ -11,6 +11,7 @@ const messages = [
 ];
 
 document.getElementById("unlockBtn").onclick = function () {
+    alert("Button works!");
 
     const pass = document.getElementById("password").value;
     const message = document.getElementById("message");
