@@ -16,6 +16,7 @@ document.getElementById("unlockBtn").onclick = function () {
     const message = document.getElementById("message");
 
     if(pass === "2125"){
+         alert("Correct password!");
 
         message.innerHTML = "🔓 Welcome, Andreiii ❤️";
 
