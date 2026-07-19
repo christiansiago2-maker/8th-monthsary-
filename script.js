@@ -22,9 +22,10 @@ document.getElementById("unlockBtn").onclick = function () {
 
         setTimeout(function(){
 
-            document.getElementById("lockScreen").style.display = "none";
+    document.getElementById("lockScreen").style.display = "none";
+    document.getElementById("giftPage").classList.remove("hidden");
 
-        },1500);
+},1500);
 
     }else{
 
