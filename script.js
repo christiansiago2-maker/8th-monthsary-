@@ -175,7 +175,7 @@ startCounter();
 // IMPORTANT:
 // Replace with the date you started dating.
 
-const startDate=new Date("2025-11-18");
+const startDate=new Date("2025-11-21");
 
 function startCounter(){
 
