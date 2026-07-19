@@ -33,10 +33,32 @@ document.getElementById("unlockBtn").onclick = function () {
 
         attempts++;
 
-        document.getElementById("password").value = "";
+        // Loading Screen
+window.onload = () => {
+    document.getElementById("lockScreen").style.display = "flex";
 
-    }
+    document.getElementById("unlockBtn").onclick = function () {
 
+        const pass = document.getElementById("password").value;
+        const message = document.getElementById("message");
+
+        if (pass === "2125") {
+
+            message.innerHTML = "🔓 Welcome, Andreiii ❤️";
+
+            setTimeout(() => {
+                document.getElementById("lockScreen").style.display = "none";
+                document.getElementById("giftPage").classList.remove("hidden");
+            }, 1500);
+
+        } else {
+
+            message.innerHTML = messages[Math.min(attempts, 4)];
+            attempts++;
+            document.getElementById("password").value = "";
+
+        }
+    };
 };
 // ===== Eight Months With You =====
 
